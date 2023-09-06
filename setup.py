@@ -6,7 +6,7 @@ DESCRIPTION = 'Encoder with group loss implemented with TensorFlow'
 LONG_DESCRIPTION = 'Encoder with group loss implemented with TensorFlow for global structure preservation'
 
 setup(
-        name='SGroupVAE', 
+        name='GroupEnc', 
         version=VERSION,
         author="David Novak",
         author_email="<davidnovakcz@hotmail.com>",
