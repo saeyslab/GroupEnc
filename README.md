@@ -11,7 +11,7 @@ David Novak (1,2), Sofie Van Gassen (1,2), Yvan Saeys (1,2)
 
 (2) Data Mining and Modeling for Biomedicine, Center for Inflammation Research, VIB-UGent, Belgium
 
-*This work has been submitted to BNAIC/BeNeLearn 2023.*
+This work has been accepted for presentation at BNAIC/BeNeLearn 2023.
 
 ---
 
