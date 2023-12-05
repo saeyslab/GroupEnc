@@ -44,9 +44,9 @@ GPU acceleration, when available, is highly recommended.
 
 ```
 conda activate GroupEnc
-pip install tensorflow=2.9.2
-pip install tensorflow-macos
+pip install tensorflow
 pip install tensorflow-metal
+pip install --upgrade git+https://github.com/saeyslab/GroupEnc.git
 ```
 
 Consult [this tutorial](https://developer.apple.com/metal/tensorflow-plugin/) in case of problems.
@@ -54,8 +54,10 @@ Consult [this tutorial](https://developer.apple.com/metal/tensorflow-plugin/) in
 ### Windows (CUDA)
 
 ```
+conda activate GroupEnc
 conda install conda-forge cudatoolkit=11.2 cudnn=8.1.0
-pip install "tensorflow<2.11"
+pip install "tensorflow=2.11"
+pip install --upgrade git+https://github.com/saeyslab/GroupEnc.git
 ```
 
 Consult [this tutorial](https://www.tensorflow.org/install/pip#windows-native) in case of problems.
@@ -63,17 +65,14 @@ Consult [this tutorial](https://www.tensorflow.org/install/pip#windows-native) i
 ### Linux (CUDA)
 
 ```
+conda activate GroupEnc
 conda install -c conda-forge cudatoolkit=11.8.0
 python3 -m pip install nvidia-cudnn-cu11==8.6.0.163 tensorflow==2.12.*
-```
-
-In a new terminal session, run:
-
-```
 mkdir -p $CONDA_PREFIX/etc/conda/activate.d
 echo 'CUDNN_PATH=$(dirname $(python -c "import nvidia.cudnn;print(nvidia.cudnn.__file__)"))' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 echo 'export LD_LIBRARY_PATH=$CONDA_PREFIX/lib/:$CUDNN_PATH/lib:$LD_LIBRARY_PATH' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 source $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+pip install --upgrade git+https://github.com/saeyslab/GroupEnc.git
 ```
 
 Consult [this tutorial](https://www.tensorflow.org/install/pip#linux) in case of problems.
@@ -81,7 +80,9 @@ Consult [this tutorial](https://www.tensorflow.org/install/pip#linux) in case of
 ### CPU
 
 ```
+conda activate GroupEnc
 pip install tensorflow
+pip install --upgrade git+https://github.com/saeyslab/GroupEnc.git
 ```
 
 Consult [this tutorial](https://www.tensorflow.org/install/pip#cpu) in case of problems.
